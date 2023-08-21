@@ -15,7 +15,7 @@ const data = [
   {
     title:'Kansas Army National Gaurd',
     years:'2012-2018',
-    details:'Primary MOS was 88M Driver',
+    details:'Primary MOS was 88M Driver, was also a marksmanship instructor, and fired off artillery',
   },
 ]
 const Work = () => {
