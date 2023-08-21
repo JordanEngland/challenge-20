@@ -1,6 +1,6 @@
 import React from 'react'
 import {TypeAnimation} from 'react-type-animation'
-import {FaLinkedinIn} from 'react-icons/fa'
+import {FaFacebook, FaGithub, FaLinkedinIn} from 'react-icons/fa'
 
 const Main = () => {
   return (
@@ -28,8 +28,16 @@ const Main = () => {
       repeat={Infinity}
     />
         </h2>
-    <div className='flex justify-center pt-6 max-w-[200px] w-full'>
-      <FaLinkedinIn className='cursor-pointer' size={25}/>
+        <div className='flex justify-center pt-6 max-w-[200px] w-full'>
+            <a href='https://www.linkedin.com/in/jordan-england-69b08027a'className='mr-4'>
+              <FaLinkedinIn className='cursor-pointer' size={30} />
+            </a>
+            <a href='https://github.com/JordanEngland?tab=repositories'className='mr-4'>
+              <FaGithub className='cursor-pointer' size={30} />
+            </a>
+            <a href='https://www.facebook.com/your-facebook-url'className='mr-4'>
+              <FaFacebook className='cursor-pointer' size={30} />
+            </a>
     </div>
     </div>
     </div>
@@ -38,3 +46,4 @@ const Main = () => {
 };
 
 export default Main;
+

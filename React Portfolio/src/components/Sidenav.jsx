@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import {AiOutlineMenu, AiOutlineHome, AiOutlineProject, AiOutlineMail} from 'react-icons/ai';
 import {BsPerson} from 'react-icons/bs';
 import {GrProjects} from 'react-icons/gr';
+import { Link } from 'react-scroll';
 
 const Sidenav = () => {
   const [nav, setNav]= useState(false);
@@ -15,27 +16,32 @@ const Sidenav = () => {
       {
         nav ? (
             <div className='fixed w-full h-screen bg-white/90 flex flex-col justify-center items-center z-30'>
-              <a href='#main'
+              <a onClick={handleNav}
+              href='#main'
               className='w-[75%] flex justify-center items-center rounded-full shadow-xl bg-slate-100 m-2 p-4 cursor-pointer hover:scale-125 ease-in duration-500'>
                 <AiOutlineHome size={20}/>
                 <span className='pl-4'>Home</span>
               </a>
-              <a href='#work'
+              <a onClick={handleNav}
+              href='#work'
               className='w-[75%] flex justify-center items-center rounded-full shadow-xl bg-slate-100 m-2 p-4 cursor-pointer hover:scale-125 ease-in duration-500'>
                 <GrProjects size={20}/>
                 <span className='pl-4'>Work</span>
               </a>
-              <a href='#projects'
+              <a onClick={handleNav}
+              href='#projects'
               className='w-[75%] flex justify-center items-center rounded-full shadow-xl bg-slate-100 m-2 p-4 cursor-pointer hover:scale-125 ease-in duration-500'>
                 <AiOutlineProject size={20}/>
                 <span className='pl-4'>Projects</span>
               </a>
-              <a href='#main'
+              <a onClick={handleNav}
+              href='#resume'
               className='w-[75%] flex justify-center items-center rounded-full shadow-xl bg-slate-100 m-2 p-4 cursor-pointer hover:scale-125 ease-in duration-500'>
                 <BsPerson size={20}/>
                 <span className='pl-4'>Resume</span>
               </a>
-              <a href='#contact'
+              <a onClick={handleNav}
+              href='#contact'
               className='w-[75%] flex justify-center items-center rounded-full shadow-xl bg-slate-100 m-2 p-4 cursor-pointer hover:scale-125 ease-in duration-500'>
                 <AiOutlineMail size={20}/>
                 <span className='pl-4'>Contact</span>
@@ -56,7 +62,7 @@ const Sidenav = () => {
             <a href='#projects' className='rounded-full shadow-xl bg-white shadow-green-800 m-2 p-4 cursor-pointer hover:scale-125 ease-in duration-500'>
               <AiOutlineProject/>
             </a>
-            <a href='#main' className='rounded-full shadow-xl bg-white shadow-green-800 m-2 p-4 cursor-pointer hover:scale-125 ease-in duration-500'>
+            <a href='#resume' className='rounded-full shadow-xl bg-white shadow-green-800 m-2 p-4 cursor-pointer hover:scale-125 ease-in duration-500'>
               <BsPerson/>
             </a>
             <a href='#contact' className='rounded-full shadow-xl bg-white shadow-green-800 m-2 p-4 cursor-pointer hover:scale-125 ease-in duration-500'>

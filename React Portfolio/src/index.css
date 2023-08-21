@@ -5,3 +5,8 @@
 *{
   scroll-behavior: smooth;
 }
+
+body {
+  @apply bg-gradient-to-b from-slate-800 to-zinc-500;
+  scroll-behavior: smooth;
+}

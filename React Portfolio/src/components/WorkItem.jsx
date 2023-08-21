@@ -12,7 +12,7 @@ const WorkItem = ({years,title,details}) => {
         <p className='my-3 text-base font-serif text-stone-900'>{details}</p>
       </li>
     </ol>
-  )
-}
+  );
+};
 
 export default WorkItem
