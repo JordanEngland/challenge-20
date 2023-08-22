@@ -17,10 +17,10 @@ As a budding web developer, I am thrilled to present my cutting-edge React portf
 
 ## Installation
 
-click on the following link
+click on the following link or open terminal and type npm install then npm run dev and open the URL.
 
 repo link https://github.com/JordanEngland/challenge-20
-website link
+website link https://jordanenglandportfolio.netlify.app
 
 
 
